@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		551F86B4281D2FC600B6701C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F86B3281D2FC600B6701C /* AppDelegate.swift */; };
 		551F86B6281D2FC600B6701C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F86B5281D2FC600B6701C /* SceneDelegate.swift */; };
-		551F86B8281D2FC600B6701C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F86B7281D2FC600B6701C /* ViewController.swift */; };
+		551F86B8281D2FC600B6701C /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F86B7281D2FC600B6701C /* StartViewController.swift */; };
 		551F86BB281D2FC600B6701C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551F86B9281D2FC600B6701C /* Main.storyboard */; };
 		551F86BD281D2FC600B6701C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551F86BC281D2FC600B6701C /* Assets.xcassets */; };
 		551F86C0281D2FC600B6701C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551F86BE281D2FC600B6701C /* LaunchScreen.storyboard */; };
 		551F86C8281D3A5300B6701C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F86C7281D3A5300B6701C /* Constants.swift */; };
+		551F86CA281E84CF00B6701C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F86C9281E84CF00B6701C /* NetworkManager.swift */; };
+		551F86CD281FE72500B6701C /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F86CC281FE72500B6701C /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		551F86B0281D2FC600B6701C /* Weather2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		551F86B3281D2FC600B6701C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		551F86B5281D2FC600B6701C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		551F86B7281D2FC600B6701C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		551F86B7281D2FC600B6701C /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		551F86BA281D2FC600B6701C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		551F86BC281D2FC600B6701C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		551F86BF281D2FC600B6701C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		551F86C1281D2FC600B6701C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		551F86C7281D3A5300B6701C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		551F86C9281E84CF00B6701C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		551F86CC281FE72500B6701C /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,26 @@
 		551F86B2281D2FC600B6701C /* Weather2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				551F86B3281D2FC600B6701C /* AppDelegate.swift */,
-				551F86B5281D2FC600B6701C /* SceneDelegate.swift */,
-				551F86B7281D2FC600B6701C /* ViewController.swift */,
+				551F86CB281E85DC00B6701C /* SupportingFiles */,
+				551F86B7281D2FC600B6701C /* StartViewController.swift */,
 				551F86B9281D2FC600B6701C /* Main.storyboard */,
-				551F86BC281D2FC600B6701C /* Assets.xcassets */,
 				551F86BE281D2FC600B6701C /* LaunchScreen.storyboard */,
-				551F86C1281D2FC600B6701C /* Info.plist */,
 				551F86C7281D3A5300B6701C /* Constants.swift */,
+				551F86C9281E84CF00B6701C /* NetworkManager.swift */,
+				551F86CC281FE72500B6701C /* Weather.swift */,
 			);
 			path = Weather2.0;
+			sourceTree = "<group>";
+		};
+		551F86CB281E85DC00B6701C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				551F86C1281D2FC600B6701C /* Info.plist */,
+				551F86BC281D2FC600B6701C /* Assets.xcassets */,
+				551F86B5281D2FC600B6701C /* SceneDelegate.swift */,
+				551F86B3281D2FC600B6701C /* AppDelegate.swift */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				551F86B8281D2FC600B6701C /* ViewController.swift in Sources */,
+				551F86B8281D2FC600B6701C /* StartViewController.swift in Sources */,
 				551F86B4281D2FC600B6701C /* AppDelegate.swift in Sources */,
+				551F86CA281E84CF00B6701C /* NetworkManager.swift in Sources */,
 				551F86B6281D2FC600B6701C /* SceneDelegate.swift in Sources */,
+				551F86CD281FE72500B6701C /* Weather.swift in Sources */,
 				551F86C8281D3A5300B6701C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +309,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WC3SZ4C286;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Weather2.0/Info.plist;
+				INFOPLIST_FILE = Weather2.0/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WC3SZ4C286;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Weather2.0/Info.plist;
+				INFOPLIST_FILE = Weather2.0/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
