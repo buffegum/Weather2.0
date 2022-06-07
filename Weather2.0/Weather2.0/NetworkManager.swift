@@ -15,14 +15,14 @@ class NetworkManager {
     
     func networkManager(city: String){
     //    guard let url = URL(string: "api.openweathermap.org/data/2.5/forecast?lat=53.2&lon=45&appid=\(apiKey)") else {return}
-        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/forecast?q=\(city)&appid=\(apiKey)") else {return}
+        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/forecast?q=\(city)&appi=\(apiKey)") else {return}
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            guard let data = data, let str = String(data: data, encoding: .utf8) else {return}
-            let weather = self.parseJSON(data: data)
-            print(weather?.city.coord)
+            guard let data = data, let _ = String(data: data, encoding: .utf8) else {return}
+            guard let weather = self.parseJSON(data: data) else {return}
+            print(weather.main.rawValue)
         }
         task.resume()
     }
