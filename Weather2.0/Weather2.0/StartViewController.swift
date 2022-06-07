@@ -7,12 +7,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StartViewController: UIViewController {
+    
+    var CurrentWeather: Int?
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+        NetworkManager.shared.networkManager(city: "Lunino")
+        }
+    
 
 
 }
