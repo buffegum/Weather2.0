@@ -15,7 +15,8 @@
 		551F86C0281D2FC600B6701C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551F86BE281D2FC600B6701C /* LaunchScreen.storyboard */; };
 		551F86C8281D3A5300B6701C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F86C7281D3A5300B6701C /* Constants.swift */; };
 		551F86CA281E84CF00B6701C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F86C9281E84CF00B6701C /* NetworkManager.swift */; };
-		551F86CD281FE72500B6701C /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F86CC281FE72500B6701C /* Weather.swift */; };
+		551F86CD281FE72500B6701C /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F86CC281FE72500B6701C /* JSON.swift */; };
+		55F0F23C2850A9E90088D235 /* CityWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0F23B2850A9E90088D235 /* CityWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,8 @@
 		551F86C1281D2FC600B6701C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		551F86C7281D3A5300B6701C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		551F86C9281E84CF00B6701C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		551F86CC281FE72500B6701C /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		551F86CC281FE72500B6701C /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		55F0F23B2850A9E90088D235 /* CityWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,8 @@
 				551F86BE281D2FC600B6701C /* LaunchScreen.storyboard */,
 				551F86C7281D3A5300B6701C /* Constants.swift */,
 				551F86C9281E84CF00B6701C /* NetworkManager.swift */,
-				551F86CC281FE72500B6701C /* Weather.swift */,
+				551F86CC281FE72500B6701C /* JSON.swift */,
+				55F0F23B2850A9E90088D235 /* CityWeather.swift */,
 			);
 			path = Weather2.0;
 			sourceTree = "<group>";
@@ -157,9 +160,10 @@
 			files = (
 				551F86B8281D2FC600B6701C /* StartViewController.swift in Sources */,
 				551F86B4281D2FC600B6701C /* AppDelegate.swift in Sources */,
+				55F0F23C2850A9E90088D235 /* CityWeather.swift in Sources */,
 				551F86CA281E84CF00B6701C /* NetworkManager.swift in Sources */,
 				551F86B6281D2FC600B6701C /* SceneDelegate.swift in Sources */,
-				551F86CD281FE72500B6701C /* Weather.swift in Sources */,
+				551F86CD281FE72500B6701C /* JSON.swift in Sources */,
 				551F86C8281D3A5300B6701C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
